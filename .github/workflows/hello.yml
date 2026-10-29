@@ -1,12 +1,19 @@
 
-name: First GitHub Actions Workflow
+name: Student Information Workflow
 
 on:
   push:
 
 jobs:
-  hello:
+  student-info:
     runs-on: ubuntu-latest
     steps:
-      - name: Display Message
-        run: echo "My first CI workflow is running!"
+      - name: Display Welcome Message
+        run: echo "Welcome to my GitHub Actions workflow!"
+
+      - name: Display Student Information
+        run: |
+          echo "Student Name: Hassan Khan"
+          echo "Registration Number: BCY241027"
+          echo "Course: DevOps Lab"
+          echo "Repository: github-actions-lab"
