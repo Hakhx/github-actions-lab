@@ -1,0 +1,23 @@
+
+name: Multiple Steps Workflow
+
+on:
+  push:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Welcome
+        run: echo "Welcome to my CI workflow!"
+
+      - name: Step 2 - Student Details
+        run: |
+          echo "Student Name: Hassan Khan"
+          echo "Registration Number: BCY241027"
+
+      - name: Step 3 - Repository Information
+        run: echo "Repository: github-actions-lab"
+
+      - name: Step 4 - Completion
+        run: echo "All workflow steps completed successfully!"
